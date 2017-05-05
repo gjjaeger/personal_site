@@ -1,0 +1,409 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.background-image {
+  background-image: image-url("gabriel.png");
+  height:100%;
+  background-size: cover;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+* {
+  font-family: "Sans Open", sans-serif;
+}
+
+.home-title{
+  position: absolute;
+  top: 35%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color:white;
+  text-align: center;
+  line-height: 190%;
+  font-style: italic;
+  font-size: 42px;
+}
+
+.name-title{
+  font-size: 64px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.aboutmeContent {
+  font-size: 24px;
+  line-height: 200%;
+  padding-top: 5%;
+}
+
+.aboutme{
+  padding-top: 5%;
+}
+
+.title {
+  text-align: center;
+  font-size: 46px;
+}
+
+.titleunderlign{
+  border-bottom: 1px solid #84DAED;
+  margin-bottom: 2%;
+}
+
+.sub-title {
+  font-size: 28px;
+}
+
+.title-quote {
+  font-style: italic;
+  text-align: center;
+}
+
+.projectrow{
+  padding-top: 5%;
+}
+
+.project{
+  position: relative;
+  padding:0px;
+}
+
+.caption, .interestText {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(222, 179, 63, 0.7);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.github {
+  margin-top: 8%;
+
+}
+
+.github button {
+  font-size: 20px;
+  text-align: center;
+}
+.interestText {
+  left: 10%;
+  width: 80%;
+}
+
+.interest-title{
+  position: absolute;
+  top: 70%;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.interest-list {
+  margin-top: 5%;
+}
+
+.image {
+  width:100%;
+  height:250px;
+}
+
+.coavmi {
+  height:auto;
+}
+
+.interest .image {
+  border-radius: 5px;
+  width:80%;
+  height:200px;
+  text-align: center;
+}
+
+.interest {
+  padding: 0;
+  text-align: center;
+}
+
+.caption-text{
+  position: absolute;
+  top:40%;
+  left:10%;
+  text-align: center;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.interest-content {
+  position: absolute;
+  top:5%;
+  left:0%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.project:hover .caption {
+  visibility: visible;
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.interest:hover .interestText {
+  visibility: visible;
+  opacity: 1;
+  border-radius: 5px;
+}
+
+.project:hover .image{
+  border-radius:10px;
+}
+
+.icon:hover {
+  color: red;
+}
+
+.ulist {
+  list-style: none;
+  padding: 0;
+}
+
+.glyphicon-star {
+  color:#DFE0E0;
+}
+
+.filled {
+  color:#22A39F;
+}
+
+.ability:hover{
+  background-color:#f6f6f6;
+  border-radius: 5px;
+}
+
+.ability{
+  padding:5px 0px;
+  height:30px;
+  line-height: 18px;
+}
+
+.ability:hover .ability-score{
+  transition-duration: 0.3s;
+  letter-spacing: 1px;
+}
+
+.ability-score{
+  text-align: right;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.ability-title{
+  font-size: 18px;
+}
+
+.abilityrow{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.backimg1t{
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 15vh;
+  background-size: 100% auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+#backimg2t{
+  background-image: url("whitetriangle bottomright.png");
+  height:30vh;
+  width: 100%;
+}
+
+.backimg1a{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 25vh;
+  background-size: 100% auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+#backimg2a{
+  background-image: url("whitetriangle topleft.png");
+  width: 100%;
+}
+
+#backimgtriangletopright{
+  background-image: url("whitetriangle topright.png");
+  width: 100%;
+}
+
+#backimgtrianglebottomleft{
+  background-image: url("whitetriangle bottomleft.png");
+  height:30vh;
+  width: 100%;
+}
+
+.changeimage{
+  margin-top: 100px;
+  width:100%;
+  background-size: cover;
+  padding:0px;
+}
+
+#firstchangeimage{
+  background: url("germany.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#secondchangeimage{
+  background: url("singapore.jpg")no-repeat center center fixed;
+  background-size: cover;
+}
+
+#thirdchangeimage{
+  background: url("montreal.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#fourthchangeimage{
+  background: url("paris.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#fifthchangeimage{
+  background: url("hongkong.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.image-title {
+  possition: absolute;
+  font-family: "Lucida Grande", Tahoma;
+  font-size: 72px;
+  opacity:0.3;
+  font-weight: lighter;
+  text-align: center;
+  color:#000;
+  vertical-align: middle;
+  padding:0px;
+}
+
+.icon {
+  position: absolute;
+  font-size: 36px;
+  line-height: 28px;
+  top:0px;
+  right: 0px;
+  padding:10px;
+  color: #c9c6c6;
+  background-color: white;
+}
+
+.glyphicon-new-window {
+  background-color: white;
+}
+
+.hackathons{
+  margin-top: 8%;
+}
+
+.hackathonlist{
+  margin-top: 4%;
+}
+
+.hackathon .image{
+  height:150px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  border-radius: 3px;
+}
+
+.hackathon:hover .image{
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.comingsoon{
+  text-align: center;
+  vertical-align: middle;
+  font-size: 42px;
+  height: 150px;
+}
+
+.comingsoon h2 {
+  line-height: 150px;
+  margin: 0px;
+  font-style: italic;
+}
+
+.contact {
+  padding-top: 5%;
+  background-color: #7e7878;
+  height:100%;
+}
+
+.contactOption img{
+  height: 35px;
+  color:  #a7a0a0;
+}
+.contactOption{
+  height: 35px;
+  padding-top: 10%;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 24px;
+  float: right;
+  line-height: 35px;
+  color: #a7a0a0;
+}
+
+.contact .title{
+  color: white;
+}
+
+#contactunderlign{
+  border-bottom: 1px solid #a7a0a0;
+  margin-bottom: 2%;
+}
+
+.contactOption:hover{
+  color: white;
+}
+
+.description {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.tasks li{
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.experience-list{
+  margin-top: 3%;
+  padding-left: 2%;
+}
