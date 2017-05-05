@@ -13,13 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap
+//= require bootstrap/modal
 //= require_tree .
 
-$(document).ready(function () {
-    $('.image').on('click', function () {
-        var image = $(this).attr('src');
-        $('#myModal').on('show.bs.modal', function () {
-            $(".img-responsive").attr("src", image);
-        });
-    });
+
+$(document).ready(function() {
+  $('.drone').click(function(){
+    $('#video').modal("show");
+  });
 });

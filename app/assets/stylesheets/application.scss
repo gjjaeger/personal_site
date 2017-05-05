@@ -12,8 +12,8 @@ body {
     height: 100%;
 }
 
-* {
-  font-family: "Sans Open", sans-serif;
+body {
+  font-family: "Open Sans";
 }
 
 .home-title{
@@ -121,10 +121,6 @@ body {
   height:250px;
 }
 
-.coavmi {
-  height:auto;
-}
-
 .interest .image {
   border-radius: 5px;
   width:80%;
@@ -135,6 +131,7 @@ body {
 .interest {
   padding: 0;
   text-align: center;
+  cursor:pointer;
 }
 
 .caption-text{
@@ -394,16 +391,51 @@ body {
 }
 
 .description {
+  padding-top: 15px;
   font-size: 16px;
   font-style: italic;
 }
 
 .tasks li{
-  font-size: 14px;
+  font-size: 16px;
   line-height: 26px;
 }
 
 .experience-list{
-  margin-top: 3%;
-  padding-left: 2%;
+  margin-top: 30px;
+}
+
+.coavmi {
+  height:auto;
+  margin-top: 30px;
+  border-radius: 4px;
+  border: 1px solid #f0ecec;
+}
+
+.video-title{
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.video-button-content{
+  line-height: 32px;
+}
+
+.location {
+  font-size: 16px;
+}
+
+.glyphicon-map-marker, .glyphicon-link{
+  color:#84DAED
+}
+
+.github-btn {
+  background-color: white;
+  color:black;
+  border: 1px solid #84DAED;
+}
+
+.github-btn:hover {
+  background-color: #f0ecec;
 }

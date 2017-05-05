@@ -287,7 +287,7 @@
     </div>
     <div class="row github">
       <a href="https://github.com/gjjaeger" target="_blank">
-        <button class="col-xs-2 col-xs-offset-5 btn">Check out my github</button>
+        <button class="col-xs-4 col-xs-offset-4 btn github-btn">Check out my github</button>
       </a>
 
     </div>
@@ -310,21 +310,22 @@
     <h4 class="title-quote">"A well rounded person is a knowledgable person"</h4>
     <div class="interest-list">
       <div class="row">
-        <div class="col-xs-4 col-xs-offset-0 interest">
+        <div class="col-xs-4 col-xs-offset-0 interest drone">
           <div class="interstCaption">
             <span class="interest-title">Drones</span>
           </div>
           <div class="interestText">
             <span class="interest-content">The world of aviation fascinates me. <br> <br>Click to watch a video of my self-built drone.</span>
           </div>
-          <%= image_tag ("drone.jpeg"), :class=>"image" %>
+          <%= image_tag ("drone.jpeg"), :class=>"image row" %>
         </div>
+
         <div class="col-xs-4 col-xs-offset-0 interest">
           <div class="interstCaption">
             <span class="interest-title">Data Science</span>
           </div>
           <div class="interestText">
-            <span class="interest-content">I am fascinated by the power of data. Click to download a recent data analysis project of mine.</span>
+            <span class="interest-content">I am fascinated by the power of data. <br>Click to download a recent data analysis project of mine.</span>
           </div>
           <%= image_tag ("datascience.jpg"), :class=>"image" %>
         </div>
@@ -361,22 +362,30 @@
 </div>
 
 
+<div class="modal fade"
+           id="video" tabindex="-1" role="dialog"
+           aria-labelledby="myModalLabel"
+           aria-hidden="true"
+           data-backdrop="static"
+           data-keyboard="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close"
+                data-dismiss="modal"
+                aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title text-center">My drone</h3>
+      </div>
+      <div class="modal-body">
+        <iframe width="100%" height="315"
+          src="https://www.youtube.com/embed/XGSy3_Czz8k">
+        </iframe>
+      </div>
 
-
-
-
-<div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-                <img class="img-responsive" src="" />
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <section class="container-fluid changeimage" id="fourthchangeimage">
   <div class="backimg1a" id="backimg2a">
@@ -388,27 +397,26 @@
 
 <div class="container">
   <div class="experience">
-    <h3 class="title">Past experience</h3>
+    <h3 class="title">Professional experience</h3>
     <div class="row">
       <div class="titleunderlign col-md-2 col-md-offset-5">
       </div>
     </div>
     <h4 class="title-quote">"Never stop learning"</h4>
-    <div class="experience-list col-xs-6">
-      <div class="row">
-        <h4 class="sub-title">Country Manager Coavmi</h4>
-      </div>
-      <div class="row">
+    <div class="row">
+      <div class="experience-list col-xs-5 col-xs-offset-1">
+        <h4 class="sub-title">Country Manager Coavmi  <span class="location"><span class="glyphicon glyphicon-map-marker"></span> Paris, France</span></h4>
         <p class="description">Coavmi is a flight-sharing platform that links private pilots and passengers. The principle is similar to car-sharing, only with planes.</p>
+        <ul class="tasks">
+          <li>Built up Coavmi's presence in Germany and UK</li>
+          <li>Managed press relations and communication projects</li>
+          <li>Defined company strategy and improved service offering</li>
+        </ul>
+        <span class="coavmi-link"><span class="glyphicon glyphicon-link"></span> <a href="https://www.coavmi.com" target="_blank">www.coavmi.com</a></span>
       </div>
-      <ul class="tasks">
-        <li>Built up Coavmi's presence in Germany and UK</li>
-        <li>Managed press relations and communication projects</li>
-        <li>Defined company strategy and improved service offering</li>
-      </ul>
-    </div>
-    <div class="col-xs-4 col-xs-offset-2">
-      <%= image_tag ("coavmi.jpg"), :class=>"image coavmi" %>
+      <div class="col-xs-4 col-xs-offset-1">
+        <%= image_tag ("coavmi.jpg"), :class=>"image coavmi" %>
+      </div>
     </div>
   </div>
 </div>
