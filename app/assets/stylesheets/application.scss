@@ -104,9 +104,9 @@ body {
   text-align: center;
 }
 .interestText {
-  left: 10%;
-  right:10%;
-  width: 80%;
+  left: 0;
+  right:0;
+  width: 100%;
 }
 
 .interest-title{
@@ -136,7 +136,7 @@ body {
 
 .interest .image {
   border-radius: 5px;
-  width:80%;
+  width:100%;
   height:200px;
   text-align: center;
 }
@@ -173,6 +173,11 @@ body {
   visibility: visible;
   opacity: 1;
   border-radius: 5px;
+}
+
+.outer-interest{
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .project:hover .image{
