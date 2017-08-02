@@ -56,9 +56,51 @@ body {
   padding-top: 5%;
 }
 
+footer{
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid grey;
+  background-color: white;
+  width: 100%;
+  z-index: 999999999999999999999999999999;
+}
+
+.small-text{
+  font-size: 12px !important;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+
+}
+
 .title {
   text-align: center;
-  font-size: 46px;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.linkedin, .email-address{
+  padding: 0px 20px;
+}
+
+.linkedin-text, .email-address-text{
+  padding-left: 10px;
+}
+
+.footer-div {
+  text-align: center;
+}
+
+.copyright{
+  position: absolute;
+  right: 5px;
+  bottom: 0;
+}
+
+.general-icon{
+  color: black;
 }
 
 .titleunderlign{
@@ -96,7 +138,8 @@ body {
 
 .github {
   margin-top: 8%;
-
+  text-align: center;
+  width: 100%;
 }
 
 .github button {
@@ -181,7 +224,24 @@ body {
 }
 
 .project:hover .image{
-  border-radius:10px;
+  border-radius:0px;
+  border: 1px solid white;
+}
+
+.comingsoon{
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px !important;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  height: 150px;
+}
+
+.comingsoon h2{
+  line-height: 150px;
+  font-size: 12px !important;
 }
 
 .icon:hover {
@@ -224,6 +284,35 @@ body {
 * {
   border:none;
 }
+
+@media only screen and (max-width: 1080px) {
+  .copyright{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .ability-title{
+    font-size: 16px !important;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .email-address{
+    width: 100% !important;
+  }
+  .linkedin{
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .glyphicon-star{
+    font-size: 16px !important;
+  }
+}
+
+
 
 @media only screen and (max-width: 1000px) {
   .project {
@@ -281,7 +370,6 @@ body {
   }
 
   .ability:hover{
-    background-color:#f6f6f6;
     border-radius: 5px;
   }
 
@@ -341,7 +429,7 @@ body {
 
   .image {
     width:100%;
-    height:250px;
+    height:200px;
   }
 
   .backimg1a{
@@ -383,7 +471,6 @@ body {
   }
 
   .ability:hover{
-    background-color:#f6f6f6;
     border-radius: 5px;
   }
 
@@ -484,6 +571,7 @@ body {
 #fifthchangeimage{
   background: url("hongkong.jpg") no-repeat center center fixed;
   background-size: cover;
+  height: 300px;
 }
 
 .image-title {
@@ -523,19 +611,6 @@ body {
 
 .hackathon .image{
   border-radius: 3px;
-}
-
-.comingsoon{
-  text-align: center;
-  vertical-align: middle;
-  font-size: 42px;
-  height: 150px;
-}
-
-.comingsoon h2 {
-  line-height: 150px;
-  margin: 0px;
-  font-style: italic;
 }
 
 .contact {
@@ -608,11 +683,15 @@ body {
 }
 
 .github-btn {
+  font-size: 16px !important;
   background-color: white;
-  color:black;
-  border: 1px solid #84DAED;
+  color:grey;
+  text-transform: uppercase;
+  border: 1px solid grey;
+  border-radius: 0 !important;
+  min-width: 200px;
 }
 
 .github-btn:hover {
-  background-color: #f0ecec;
+  border: 1px solid #84DAED;
 }
