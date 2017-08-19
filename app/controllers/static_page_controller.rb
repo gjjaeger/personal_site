@@ -4,4 +4,15 @@ class StaticPageController < ApplicationController
 
   def help
   end
+
+  def aboutme
+
+  end
+
+  def portfolio
+
+  end
+  def contact
+    @contact = Contact.new()
+  end
 end

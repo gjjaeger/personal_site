@@ -1,0 +1,53 @@
+<%= render "layouts/navbar" %>
+<div class="contact">
+  <% unless notice.nil?%>
+    <p id="notice"><%= notice %></p>
+  <%end%>
+  <div class="contact-title-container">
+    <span class="page-title" id="work-together-title">Let's work together</span>
+  </div>
+  <div class="contact-form-container">
+    <%= form_for @contact do |f| %>
+      <div class="input-row">
+        <div class="contact-input-div-left">
+          <%= f.label :name, class:"contact-input-label" %>
+          <%= f.text_field :name, class:"contact-input" %>
+        </div>
+        <div class="contact-input-div-center">
+          <%= f.label :title, class:"contact-input-label" %>
+          <%= f.text_field :title, class:"contact-input" %>
+        </div>
+        <div class="contact-input-div-right">
+          <%= f.label :company, class:"contact-input-label" %>
+          <%= f.text_field :company, class:"contact-input" %>
+        </div>
+      </div>
+      <div class="contact-input-div-left">
+        <%= f.label :email, class:"contact-input-label" %>
+        <%= f.text_field :email, class:"contact-input" %>
+      </div>
+      <div class="contact-input-div-center">
+        <%= f.label :phone_number, class:"contact-input-label" %>
+        <%= f.text_field :phone_number, class:"contact-input" %>
+      </div>
+
+      <div class="slider">
+        <span class="contact-input-label" id="budget-label">Budget</span>
+        <div class="slider-container">
+          <div id="budget-slider" class="budget-slider"></div>
+          <%= f.hidden_field :budget, :class=>"budget-hidden-field", value: 0 %>
+          <div class="budget-number-container">
+            <span id="budget-number" class="white">US$ 0</span>
+          </div>
+        </div>
+      </div>
+      <div class="additional-details-container">
+        <%= f.label :message, 'Additional Details', class:"contact-input-label" %>
+        <%= f.text_area :message, class:"contact-input", id:"additional-details" %>
+      </div>
+      <div class="button-container" id="contact-submit-container">
+        <button type="submit" class="btn btn-lg simple-button" id="contact-submit"><span class="button-text">Submit Details</button>
+      </div>
+    <% end %>
+  </div>
+</div>

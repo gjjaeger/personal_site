@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery-ui
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
@@ -18,32 +19,39 @@
 //= require_tree .
 
 
-$(document).ready(function() {
-  $('.drone').click(function(){
-    $('#video').modal("show");
+$(document).on('turbolinks:load', function(){
+  $('#mainCarousel').carousel();
+  $("#budget-slider").slider({
+    range:false,
+    min: 0 ,
+    max: 30,
+    values: 0,
+    slide: function( event, ui ) {
+      $('.budget-hidden-field').val(ui.value*1000);
+      $("#budget-number").html("US$ " + ui.value*1000);
+    }
   });
-
-  $('#video').on('hidden.bs.modal', function(){
-    $iframe = $(this).find("iframe");
-    $iframe.attr("src", $iframe.attr("src"));
+  $('#contact-nav-item').on('click',function(){
+    showContactForm()
   });
-
-  $(window).scroll( function(){
-
-    /* Check the location of each desired element */
-    $('.image-title').each( function(i){
-
-        var bottom_of_object = $(this).offset().top + ($(this).outerHeight());
-        var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-        /* If the object is completely visible in the window, fade it in */
-        if( bottom_of_window > bottom_of_object){
-
-            $(this).animate({'opacity':'0.5'},500);
-
-        }
-
+  $('#get-in-touch').on('click',function(){
+    showContactForm()
+  });
+  $('#get-quote-button').on('click',function(){
+    showContactForm()
+  });
+  $('.closebtn').on('click',function(){
+    $('.contact-modal').animate({
+      top: "-100%"
+    }, 1000, function(){
+      $('.contact-modal').hide();
     });
+  });
 
-});
+  function showContactForm(){
+    $('.contact-modal').show();
+    $('.contact-modal').animate({
+      top: "0"
+    }, 1000);
+  };
 });

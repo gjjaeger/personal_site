@@ -1,366 +1,43 @@
-<div class = "background-image">
-  <h1 class ="home-title">Hello, I'm <br><span class="name-title">Gabriel Jaeger</span></h1>
-</div>
+<%= render "layouts/homepage_navbar" %>
 
-<div class="container">
-  <div class="aboutme">
-    <h3 class="title">About me</h3>
-    <div class="row">
-      <div class="titleunderlign col-xs-4 col-xs-offset-4 col-md-2 col-md-offset-5">
-      </div>
-    </div>
-    <div class="row personal-desc">
-      <span class="helper"></span>
-      <div class="aboutmeContent col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-0">
-        <p>Born in a small town in Germany, I have already seen and done a lot in my 20 years in this world. As my most recent undertaking, I have decided to pursue my <span class="bold-text">interest in web development</span> and become serious in this domain. <br><br>I am fascinated with the power of this tool and it's potential to <span class="bold-text">change</span> so many <span class="bold-text">people's lives</span>. That being said, I am very enthusiastic about working on projects that make <span class="bold-text">a positive difference</span>. Please do reach out to me, should you be interested in <span class="bold-text">working together</span>.</p>
-      </div>
-      <span class="helper"></span>
-      <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-0">
-        <%= image_tag ("group.jpg"), :class=>"image group" %>
-      </div>
-    </div>
-  </div>
-</div>
-<section class="container-fluid changeimage" id="firstchangeimage">
-  <div class="backimg1a" id="backimgtriangletopright">
-  </div>
-  <h3 class="image-title">Germany 1996-2006</h3>
-  <div class="backimg1t" id="backimgtrianglebottomleft">
-  </div>
-</section>
-<div class="container">
-  <div class="abilities">
-    <h3 class="title">Abilities</h3>
-    <div class="row">
-      <div class="titleunderlign col-xs-4 col-xs-offset-4 col-md-2 col-md-offset-5">
-      </div>
-    </div>
-    <div class="row">
-      <h2 class="sub-title col-xs-11 col-xs-offset-1">Skills</h2>
-      <div class="abilities-list col-xs-12 col-xs-offset-0">
-        <ul class="ulist">
-          <div class="abilityrow row">
-            <li class="ability col-xs-11 col-xs-offset-1 col-md-5 col-md-offset-1">
-              <span class="ability-title col-xs-6">HTML5</span>
-              <span class="ability-score col-xs-5 col-md-6">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-            </li>
-            <li class="ability col-xs-11 col-xs-offset-1 col-md-5 col-md-offset-0">
-              <span class="ability-title col-xs-6">CSS3</span>
-              <span class="ability-score col-xs-5 col-md-6">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-            </li>
-          </div>
-          <div class="abilityrow row">
-            <li class="ability col-xs-11 col-xs-offset-1 col-md-5 col-md-offset-1">
-              <span class="ability-title col-xs-6">Ruby</span>
-              <span class="ability-score col-xs-5 col-md-6">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-            </li>
-            <li class="ability col-xs-11 col-xs-offset-1 col-md-5 col-md-offset-0">
-              <span class="ability-title col-xs-6">Javascript</span>
-              <span class="ability-score col-xs-5 col-md-6">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-            </li>
-          </div>
-          <div class="abilityrow row">
-            <li class="ability col-xs-11 col-xs-offset-1 col-md-5 col-md-offset-1">
-              <span class="ability-title col-xs-6">Python</span>
-              <span class="ability-score col-xs-5 col-md-6">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-            </li>
-            <li class="ability col-xs-11 col-xs-offset-1 col-md-5 col-md-offset-0">
-              <span class="ability-title col-xs-6">Typescript</span>
-              <span class="ability-score col-xs-5 col-md-6">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-            </li>
-          </div>
-          <div class="abilityrow row">
-            <li class="ability col-xs-11 col-xs-offset-1 col-md-5 col-md-offset-1">
-              <span class="ability-title col-xs-6">Angular2</span>
-              <span class="ability-score col-xs-5 col-md-6">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-            </li>
-            <li class="ability col-xs-11 col-xs-offset-1 col-md-5 col-md-offset-0">
-              <span class="ability-title col-xs-6">Ember</span>
-              <span class="ability-score col-xs-5 col-md-6">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-            </li>
-          </div>
-          <div class="abilityrow row">
-            <li class="ability col-xs-11 col-xs-offset-1 col-md-5 col-md-offset-1">
-              <span class="ability-title col-xs-6">PostgreSQL</span>
-              <span class="ability-score col-xs-5 col-md-6">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-            </li>
-            <li class="ability col-xs-11 col-xs-offset-1 col-md-5 col-md-offset-0">
-              <span class="ability-title col-xs-6">Rails</span>
-              <span class="ability-score col-xs-5 col-md-6">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-            </li>
-          </div>
-          <div class="abilityrow row">
-            <li class="ability col-xs-11 col-xs-offset-1 col-md-5 col-md-offset-1">
-              <span class="ability-title col-xs-6">JQuery</span>
-              <span class="ability-score col-xs-5 col-md-6">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-            </li>
-            <li class="ability col-xs-11 col-xs-offset-1 col-md-5 col-md-offset-0">
-              <span class="ability-title col-xs-6">Bootstrap</span>
-              <span class="ability-score col-xs-5 col-md-6">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-              </span>
-            </li>
-          </div>
-        </ul>
-      </div>
-    </div>
-    <hr>
-    <div class="row">
-      <h2 class="sub-title col-xs-11 col-xs-offset-1">Languages</h2>
-      <div class="abilities-list col-xs-12">
-        <ul class="ulist">
-          <div class = "abilityrow row">
-            <li class="ability col-xs-11 col-xs-offset-1 col-md-5 col-md-offset-1">
-              <span class="ability-title col-xs-6">English (mother-tongue)</span>
-              <span class="ability-score col-xs-5 col-md-6">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-              </span>
-            </li>
-            <li class="ability col-xs-11 col-xs-offset-1 col-md-5 col-md-offset-0">
-              <span class="ability-title col-xs-6">German (mother-tongue)</span>
-              <span class="ability-score col-xs-5 col-md-6">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-              </span>
-            </li>
-          </div>
-          <div class="abilityrow row">
-            <li class="ability col-xs-11 col-xs-offset-1 col-md-5 col-md-offset-1">
-              <span class="ability-title col-xs-6">French</span>
-              <span class="ability-score col-xs-5 col-md-6">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star filled"></span>
-              </span>
-            </li>
-            <li class="ability col-xs-11 col-xs-offset-1 col-md-5 col-md-offset-0">
-              <span class="ability-title col-xs-6">Mandarin</span>
-              <span class="ability-score col-xs-5 col-md-6">
-                <span class="glyphicon glyphicon-star filled"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-              </span>
-            </li>
-          </div>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-<section class="container-fluid changeimage" id="secondchangeimage">
-  <div class="backimg1a" id="backimg2a">
-  </div>
-  <h3 class="image-title">Singapore 2006-2013</h3>
-  <div class="backimg1t" id="backimg2t">
-  </div>
-</section>
-<div class="container">
-  <div class="projects">
-    <h3 class="title">Projects</h3>
-    <div class="row">
-      <div class="titleunderlign col-xs-4 col-xs-offset-4 col-md-2 col-md-offset-5">
-      </div>
-    </div>
-    <div class="project-list">
-      <div class="projectrow row">
-        <div class="col-xs-12 col-md-4 col-md-offset-2 project">
-          <%= image_tag ("ecommerce.jpg"), :class=>"image" %>
-          <a href="https://still-garden-48532.herokuapp.com" target="_blank">
-          <span class="icon">
-            <span class="glyphicon glyphicon-new-window"></span>
-          </span>
-          </a>
+<div class="row carousel">
+  <div id="mainCarousel" class="carousel slide mainCarousel" data-interval="3000" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item item active">
+        <div class="eatCodeSleep">
+          <span class="massive-text float-right">Eat</span>
+          <span class="massive-text float-right orange">Code</span>
+          <span class="massive-text float-right">Sleep</span>
+          <span class="my-title float-right">Freelance Web Developer / Creative - Gabriel Jaeger</span>
         </div>
-        <div class="col-xs-12 col-md-4 col-md-offset-1 project">
-          <%= image_tag ("self-checkout.jpg"), :class=>"image",:options => { "data-toggle" => "modal", "data-target" => "#myModal"}%>
-          <a href="https://www.youtube.com/watch?v=YYV5TtxQa0Y" target="_blank">
-            <span class="icon">
-              <span class="glyphicon glyphicon-new-window"></span>
-            </span>
-          </a>
+      </div>
+      <div class="carousel-item item">
+        <div class="build-together">
+          <div class="build-together-text-container">
+            <span class="build-together-text">Let's Build something amazing together</span>
+            <span class="medium-sized white slogan">A web developer by day, entrepreneur at heart</span>
+            <%= link_to static_page_portfolio_path, class:"btn btn-lg simple-button", id:"learn-how-button" do%>
+              <span class="button-text">
+                Learn How
+              </span>
+            <%end%>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item item">
+        <div class="get-quote">
+          <div class="build-together-text-container">
+            <span class="build-together-text">Get a beautiful website tailored to your needs</span>
+            <span class="medium-sized white slogan">Let me worry about the website. You worry about the rest.</span>
+            <a href="javascript:void(0)" class="btn btn-lg simple-button" id="get-quote-button">
+              <span class="button-text">
+                get a quote now
+              </span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-xs-12 col-md-6 col-md-offset-3 comingsoon">
-      <h2>More coming soon...</h2>
-    </div>
-    <div class="github col-xs-12">
-      <a href="https://github.com/gjjaeger" target="_blank">
-        <button class="btn github-btn">Check out my github</button>
-      </a>
-
-    </div>
   </div>
 </div>
-<section class="container-fluid changeimage" id="thirdchangeimage">
-  <div class="backimg1a" id="backimgtriangletopright">
-  </div>
-  <h3 class="image-title">Canada 2013-2016</h3>
-  <div class="backimg1t" id="backimgtrianglebottomleft">
-  </div>
-</section>
-<div class="container">
-  <div class="hackathons">
-    <h3 class="title">Hackathons</h3>
-    <div class="row">
-      <div class="titleunderlign col-xs-4 col-xs-offset-4 col-md-2 col-md-offset-5">
-      </div>
-    </div>
-    <div class="row hackathonlist">
-      <div class="col-xs-5 col-md-2 col-md-offset-1 hackathon">
-        <%= image_tag ("hackust.png"), :class=>"image" %>
-      </div>
-      <div class="col-xs-5 col-xs-offset-2 col-md-2 col-md-offset-1 hackathon">
-        <%= image_tag ("angelhack.png"), :class=>"image" %>
-      </div>
-      <div class="col-xs-12 col-md-6 comingsoon">
-        <h2>More coming soon...</h2>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="modal fade"
-           id="video" tabindex="-1" role="dialog"
-           aria-labelledby="myModalLabel"
-           aria-hidden="true"
-           data-backdrop="static"
-           data-keyboard="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close"
-                data-dismiss="modal"
-                aria-label="Close">
-                <span aria-hidden="true">&times;</span></button>
-        <h3 class="modal-title text-center">My drone</h3>
-      </div>
-      <div class="modal-body">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Z_TM75JP60I?ecver=1" frameborder="0" allowfullscreen></iframe>
-      </div>
-
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
-<section class="container-fluid changeimage" id="fourthchangeimage">
-  <div class="backimg1a" id="backimg2a">
-  </div>
-  <h3 class="image-title">France 2016</h3>
-  <div class="backimg1t" id="backimg2t">
-  </div>
-</section>
-
-<div class="container">
-  <div class="experience">
-    <h3 class="title">Professional experience</h3>
-    <div class="row">
-      <div class="titleunderlign col-xs-4 col-xs-offset-4 col-md-2 col-md-offset-5">
-      </div>
-    </div>
-    <div class="row">
-      <div class="experience-list col-xs-12 col-md-5 col-md-offset-1">
-        <h4 class="sub-title">Country Manager Coavmi  <span class="location"><span class="glyphicon glyphicon-map-marker"></span> Paris, France</span></h4>
-        <p class="description">Coavmi is a flight-sharing platform that links private pilots and passengers. The principle is similar to car-sharing, only with planes.</p>
-        <ul class="tasks">
-          <li>Built up Coavmi's presence in Germany and UK</li>
-          <li>Managed press relations and communication projects</li>
-          <li>Defined company strategy and improved service offering</li>
-        </ul>
-        <span class="coavmi-link"><span class="glyphicon glyphicon-link"></span> <a href="https://www.coavmi.com" target="_blank">www.coavmi.com</a></span>
-      </div>
-      <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-1">
-        <%= image_tag ("coavmi.jpg"), :class=>"image coavmi" %>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<section class="container-fluid changeimage" id="fifthchangeimage">
-  <div class="backimg1a" id="backimgtriangletopright">
-  </div>
-  <h3 class="image-title">Hong Kong 2017</h3>
-</section>
+<%= render "layouts/footer" %>

@@ -11,6 +11,9 @@ source 'https://rubygems.org'
   gem 'jbuilder', '~> 2.5'
   gem 'bootstrap-sass'
   gem 'devise'
+  gem 'mail_form'
+  gem 'jquery-ui-rails', '~> 5.0.5'
+
 
   group :development, :test do
     gem 'byebug', platform: :mri
