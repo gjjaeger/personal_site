@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
   root 'static_page#home'
-  get 'static_page/home'
-  get 'static_page/aboutme'
-  get 'static_page/portfolio'
-  get 'static_page/contact'
-  get 'static_page/help'
+  get '/home' => 'static_page#home', :as => :home
+  get '/about' => 'static_page#about', :as => :about
+  get '/portfolio' => 'static_page#portfolio', :as => :portfolio
   resources :contacts
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

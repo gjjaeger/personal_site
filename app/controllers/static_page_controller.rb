@@ -5,7 +5,7 @@ class StaticPageController < ApplicationController
   def help
   end
 
-  def aboutme
+  def about
 
   end
 

@@ -7,15 +7,19 @@ $orange: #f6a11f;
 $light-grey: #eae6e2;
 $grey: grey;
 
-.eatCodeSleep, .build-together, .get-quote{
+.eatCodeSleep, .get-quote{
   height: 100%;
-  width: 100%;
+  width: 100vw;
   margin: 0;
   background-color: $black-grey;
 }
 
+.get-quote{
+  height: calc(100% - 60px) !important;
+}
+
 .eatCodeSleep{
-  padding-top: 60px;
+  padding-top: 0px;
 }
 
 .orange{
@@ -430,8 +434,13 @@ a:hover{
   float:right;
 }
 
-.my-title{
+.my-title-container{
+  height: 10vh;
   clear: both;
+  padding-top: 30px;
+}
+
+.my-title{
   height: 10vh;
   line-height: 10vh;
   font-size: 1.5em;

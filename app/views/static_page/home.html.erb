@@ -1,46 +1,17 @@
 <%= render "layouts/homepage_navbar" %>
 
-<div class="row carousel">
-  <% unless notice.nil?%>
-    <p class="home-notice" id="notice"><%= notice %></p>
-  <%end%>
-  <div id="mainCarousel" class="carousel slide mainCarousel" data-interval="3000" data-ride="carousel">
-    <div class="carousel-inner" role="listbox">
-      <div class="carousel-item item active">
-        <div class="eatCodeSleep">
-          <span class="massive-text float-right">Eat</span>
-          <span class="massive-text float-right orange">Code</span>
-          <span class="massive-text float-right">Sleep</span>
-          <span class="my-title float-right">Freelance Web Developer / Creative - Gabriel Jaeger</span>
-        </div>
-      </div>
-      <div class="carousel-item item">
-        <div class="build-together">
-          <div class="build-together-text-container">
-            <span class="build-together-text">Let's Build something amazing together</span>
-            <span class="medium-sized white slogan">A web developer by day, entrepreneur at heart</span>
-            <%= link_to static_page_portfolio_path, class:"btn btn-lg simple-button", id:"learn-how-button" do%>
-              <span class="button-text">
-                Learn How
-              </span>
-            <%end%>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item item">
-        <div class="get-quote">
-          <div class="build-together-text-container">
-            <span class="build-together-text">Get a beautiful website tailored to your needs</span>
-            <span class="medium-sized white slogan">Let me worry about the website. You worry about the rest.</span>
-            <a href="javascript:void(0)" class="btn btn-lg simple-button" id="get-quote-button">
-              <span class="button-text">
-                get a quote now
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+<% unless notice.nil?%>
+  <p class="home-notice" id="notice"><%= notice %></p>
+<%end%>
+<div class="get-quote">
+  <div class="build-together-text-container">
+    <span class="build-together-text">Get a beautiful website tailored to your needs</span>
+    <span class="medium-sized white slogan">Let me worry about the website. You worry about the rest.</span>
+    <a href="javascript:void(0)" class="btn btn-lg simple-button" id="get-quote-button">
+      <span class="button-text">
+        get a quote now
+      </span>
+    </a>
   </div>
 </div>
 <%= render "layouts/footer" %>
