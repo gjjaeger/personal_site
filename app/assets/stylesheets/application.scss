@@ -256,11 +256,24 @@ textarea:focus, input:focus, .simple-button:focus{
   font-size: 24px;
   color:white;
   width: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   margin-left: auto;
   margin-right: auto;
   border: 1px solid $orange;
   text-align: center;
   padding: 10px;
+  font-weight: 200;
+  z-index: 400000;
+}
+
+.home-notice{
+  top:60px !important; //homenavbar is absolute
+}
+
+.black{
+  color:$black-grey !important;
 }
 
 #contact-submit-container{
@@ -466,9 +479,11 @@ footer{
   float: right;
   padding-left: 75px;
   padding-right: 75px;
-  padding-top:150px;
+  padding-top:75px;
   position: relative;
+  overflow: scroll;
   width:60vw;
+  height: calc(100vh - 60px);
   display: inline-block;
 }
 
@@ -483,7 +498,9 @@ footer{
   padding-top:50px;
   position: relative;
   width:60vw;
+  overflow: scroll;
   display: inline-block;
+  height: calc(100vh - 60px);
 }
 
 .tab{
@@ -522,11 +539,16 @@ footer{
 }
 
 .aboutme{
-  height:100vh;
+  height:calc(100vh - 60px);
+  position: relative;
+  top:60px;
 }
 
 .my-places{
+  position: relative;
+  clear: both;
   height:calc(100vh - 60px) !important;
+  top:60px;
 }
 
 .portfolio{

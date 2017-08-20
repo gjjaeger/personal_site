@@ -1,5 +1,14 @@
 <%= render "layouts/navbar" %>
 <div class="aboutme">
+  <% unless notice.nil?%>
+    <p class="black" id="notice"><%= notice %></p>
+  <%end%>
+  <div class="eatCodeSleep">
+    <span class="massive-text float-right">Eat</span>
+    <span class="massive-text float-right orange">Code</span>
+    <span class="massive-text float-right">Sleep</span>
+    <span class="my-title float-right">Freelance Web Developer / Creative - Gabriel Jaeger</span>
+  </div>
   <div class="about-me-image-container">
     <%= image_tag('adventure.jpg', :class=>"about-me-image")%>
   </div>

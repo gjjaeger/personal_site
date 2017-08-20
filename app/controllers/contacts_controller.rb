@@ -6,7 +6,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
     respond_to do |format|
       if @contact.save
-        format.html { redirect_to static_page_contact_path, notice: 'Your message has been sent.' }
+        format.html { redirect_to :back, notice: 'Your message has been sent.' }
         format.json { render :show, status: :created, location: @contact }
       else
         format.html { render :new }

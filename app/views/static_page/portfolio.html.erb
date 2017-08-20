@@ -1,5 +1,8 @@
 <%= render "layouts/navbar" %>
 <div class="portfolio">
+  <% unless notice.nil?%>
+    <p class="black" id="notice"><%= notice %></p>
+  <%end%>
   <div class="project">
     <div class="project-title-container">
       <span class="project-title page-title">E-Commerce Website</span>

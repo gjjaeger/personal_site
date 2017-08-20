@@ -1,6 +1,9 @@
 <%= render "layouts/homepage_navbar" %>
 
 <div class="row carousel">
+  <% unless notice.nil?%>
+    <p class="home-notice" id="notice"><%= notice %></p>
+  <%end%>
   <div id="mainCarousel" class="carousel slide mainCarousel" data-interval="3000" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item item active">
