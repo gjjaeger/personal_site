@@ -76,7 +76,7 @@ $grey: grey;
 
 .build-together-text-container{
   display: block;
-  width:60%;
+  width:50%;
   position: relative;
   top: 50%;
   left:50%;
@@ -89,7 +89,7 @@ $grey: grey;
   font-size: 3em;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .simple-button:hover{
@@ -146,6 +146,7 @@ $grey: grey;
 }
 
 .contact-form-container{
+  padding-top: 50px;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
@@ -157,9 +158,9 @@ $grey: grey;
   background-color: transparent;
   border:0px;
   border-bottom: 1px solid $grey !important;
-  width: 75%;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  width: 80%;
+  margin-top: 30px;
+  margin-bottom: 30px;
   color: white;
 }
 
@@ -191,12 +192,12 @@ $grey: grey;
 
 .budget-slider.ui-slider {
   border: 0;
-  background: $light-grey;
+  background: $grey;
   border-radius: 1px;
 }
 
 .budget-slider.ui-slider-horizontal {
-  height: 30px;
+  height: 5px;
 }
 
 .budget-slider.ui-slider-vertical {
@@ -205,8 +206,8 @@ $grey: grey;
 }
 
 .budget-slider .ui-slider-handle {
-  width: 29px !important;
-  height: 30px !important;
+  width: 15px !important;
+  height: 15px !important;
   background: $orange !important;
   border-radius: 1%;
   border: none !important;
@@ -217,7 +218,7 @@ $grey: grey;
 
 .budget-slider.ui-slider-horizontal .ui-slider-handle {
   top: 50%;
-  margin-top: -15px;
+  margin-top: -7.5px;
 }
 
 .budget-slider.ui-slider-vertical .ui-slider-handle {
@@ -232,12 +233,12 @@ $grey: grey;
 .budget-slider .ui-slider-range {
   border: 0;
   border-radius: 1;
-  background: #f99;
+  background: white;
 }
 
 .budget-slider.ui-slider-horizontal .ui-slider-range {
   top: 0;
-  height: 30px;
+  height: 5px;
 }
 
 .budget-slider.ui-slider-vertical .ui-slider-range {
@@ -250,6 +251,8 @@ $grey: grey;
   margin-right: -2px;
   display: inline-block;
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 textarea:focus, input:focus, .simple-button:focus{
@@ -287,7 +290,8 @@ textarea:focus, input:focus, .simple-button:focus{
 
 #work-together-title{
   color: white !important;
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 28px;
   text-transform: uppercase;
 }
 
@@ -342,16 +346,14 @@ body, html {
 
 #budget-number{
   display: inline-block !important;
-  font-size: 24px;
-  font-weight: bolder;
+  font-size: 18px;
+  font-weight: 200;
 }
 
 .budget-number-container{
   padding-left: 20px;
   display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  top:0 !important;
+
 }
 
 .additional-details-container{
@@ -648,7 +650,6 @@ footer{
   font-size: 1.5em;
   letter-spacing: 2px;
   font-weight: 100;
-  text-transform: uppercase;
 }
 
 .about-me-image, .my-places-image{

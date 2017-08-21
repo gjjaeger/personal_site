@@ -22,7 +22,7 @@
 $(document).on('turbolinks:load', function(){
   $('#mainCarousel').carousel();
   $("#budget-slider").slider({
-    range:false,
+    range:"min",
     min: 0 ,
     max: 30,
     values: 0,
