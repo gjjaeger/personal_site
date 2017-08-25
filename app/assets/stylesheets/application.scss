@@ -967,22 +967,33 @@ strong{
     padding: 20px;
     padding-top: 60px;
   }
+
+  .budget-slider{
+    width: 100% !important;
+  }
+
+  .budget-number-container{
+    width: 100%;
+    padding-left: 0;
+    padding-top: 30px;
+  }
+
   .budget-slider .ui-slider-handle {
-    width: 22px !important;
-    height: 22px !important;
+    width: 26px !important;
+    height: 26px !important;
   }
 
   .budget-slider.ui-slider .ui-slider-handle {
     top: 50%;
-    margin-top: -11px;
+    margin-top: -13px;
   }
 
   .budget-slider.ui-slider {
-    height: 6px;
+    height: 8px;
   }
 
   .budget-slider.ui-slider .ui-slider-range {
-    height: 6px;
+    height: 8px;
   }
 }
 
