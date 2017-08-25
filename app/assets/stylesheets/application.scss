@@ -16,11 +16,6 @@ $grey: grey;
   background-color: $black-grey;
 }
 
-body, html{
-  width: 100% !important;
-
-}
-
 .page-content{
   margin-left: 0;
 }
@@ -316,10 +311,6 @@ textarea:focus, input:focus, .simple-button:focus{
   font-weight: 400;
   font-size: 28px;
   text-transform: uppercase;
-}
-
-body, html {
-  height: 100% !important;
 }
 
 .contact-modal{
@@ -797,13 +788,12 @@ footer{
 
 body{
   overflow-y: hidden !important;
-  height: 1500px !important;
+  height: 100% !important;
 }
 
 html { overflow:auto !important; }
 
 .yield-container{
-  height: 1500px !important;
   overflow: scroll !important;
 }
 
