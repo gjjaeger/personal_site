@@ -33,6 +33,10 @@ html { overflow:auto; }
   overflow-y: scroll !important;
 }
 
+.yield-container{
+  overflow: scroll !important;
+}
+
 .get-quote{
   height: calc(100% - 60px) !important;
 }
