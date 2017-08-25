@@ -1003,19 +1003,18 @@ strong{
   }
 };
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   .about-me-text, .my-places-text{
-    font-size: 16px;
+    font-size: 16px !important;
   }
   .page-title{
-    font-size: 36px;
-    color: black !important;
+    font-size: 36px !important;
   }
   .hunter-prounounciation{
-    font-size: 18px;
+    font-size: 18px !important;
   }
   .my-title, .my-name-small-screen{
-    font-size: 11px;
+    font-size: 11px !important;
     padding-right: 20px;
   }
 
