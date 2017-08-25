@@ -318,13 +318,13 @@ textarea:focus, input:focus, .simple-button:focus{
 .contact-modal{
   width: 100%;
   height: 100% !important;
-  position: fixed;
+
   top:-100%;
   left: 0;
   z-index: 2000;
   background-color: $black-grey;
   display: none;
-  overflow:scroll;
+  overflow: scroll !important;
 }
 
 .closebtn {
