@@ -7,18 +7,31 @@ $orange: #f6a11f;
 $light-grey: #eae6e2;
 $grey: grey;
 
+.page-content{
+  margin-left: 0;
+}
+
 .eatCodeSleep, .get-quote{
   height: 100%;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   background-color: $black-grey;
+}
+
+body, html{
+  width: 100% !important;
 }
 
 .get-quote{
   height: calc(100% - 60px) !important;
 }
 
+header{
+  margin: 0 !important;
+}
+
 .eatCodeSleep{
+  display: block;
   padding-top: 0px;
 }
 
@@ -166,6 +179,9 @@ $grey: grey;
   margin-top: 30px;
   margin-bottom: 30px;
   color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
 }
 
 .contact-input-div-left{
@@ -419,7 +435,7 @@ body, html {
 }
 
 .massive-text{
-  font-size: 10em;
+  font-size: 148px;
   clear: both;
   height: calc(30% - 20px);
   padding-right: 40px;
@@ -441,14 +457,18 @@ a:hover{
 }
 
 .my-title-container{
-  height: 10vh;
+  height: 10%;
   clear: both;
   padding-top: 30px;
 }
 
-.my-title{
-  height: 10vh;
-  line-height: 10vh;
+.my-name-small-screen{
+  display: none;
+}
+
+.my-title, .my-name-small-screen{
+  height: 100%;
+  line-height: 30px;
   font-size: 1.5em;
   letter-spacing: 2px;
   color: white;
@@ -488,6 +508,7 @@ footer{
   background-color: white;
   border-bottom: 1px solid $light-grey;
   z-index: 1000;
+  top:0;
 }
 
 .about-me-text-container{
@@ -496,7 +517,6 @@ footer{
   padding-right: 75px;
   padding-top:75px;
   position: relative;
-  overflow: scroll;
   width:60vw;
   height: calc(100vh - 60px);
   display: inline-block;
@@ -513,7 +533,6 @@ footer{
   padding-top:50px;
   position: relative;
   width:60vw;
-  overflow: scroll;
   display: inline-block;
   height: calc(100vh - 60px);
 }
@@ -555,8 +574,7 @@ footer{
 
 .aboutme{
   height:calc(100vh - 60px);
-  position: relative;
-  top:60px;
+  margin-top: 60px;
 }
 
 .my-places{
@@ -720,3 +738,256 @@ footer{
   background-color: $black-grey;
   color:white;
 }
+
+.small-screen-menu{
+  touch-action: none !important;
+  height: 100%;
+  width: 0px;
+  margin:0 !important;
+  padding: 0!important;
+  padding-top: 30px !important;
+  position: fixed;
+  z-index: 10000000;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  background-color: $light-grey;
+}
+
+.small-screen-menu .closebtn {
+  position: absolute !important;
+  top: 0;
+  right: 5px;
+  font-size: 36px !important;
+  margin-left: 50px;
+  font-weight: 100 !important;
+}
+
+.small-screen-menu .small-screen-menu-item{
+  width:100% !important;
+  text-align: center;
+  padding: 3px;
+  text-transform: uppercase;
+}
+
+.menu-dropdown-tab{
+  position: relative;
+  left: 0;
+  display: none;
+  width:50px;
+  text-align: center;
+  margin: 0 !important;
+}
+
+.menu-dropdown-button:hover, .menu-dropdown-button:focus{
+  color: $black-grey;
+  background: none !important;
+  border: 0px !important ;
+}
+
+strong{
+  font-weight: 400 !important;
+}
+
+@media (max-width: 1140px) {
+  .build-together-text-container{
+    width:60%;
+  }
+}
+
+@media (max-width: 950px) {
+  .build-together-text{
+    font-size: 30px;
+  }
+  .contact-form-container{
+    width: 70%;
+  }
+}
+
+@media (max-width: 890px) {
+  .about-me-text-container, .my-places-text-container{
+    padding: 40px;
+  }
+}
+
+@media (max-width: 850px) {
+  .project-image-container, .project-details-container{
+    width: 100% !important;
+  }
+  .contact-form-container{
+    width: 80%;
+  }
+
+  .project-details-container{
+    padding-left: 0;
+    padding-top: 60px;
+  }
+
+  .project-title-container{
+    width: 100%;
+  }
+
+  .go-to-site-button-container{
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .my-title, .my-name-small-screen{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 750px) {
+  .nav-item{
+    width: 125px;
+  }
+  #contact-nav-item{
+    padding: 8px 25px;
+  }
+  .simple-button{
+    width: 200px !important;
+    border-width: 1px !important;
+  }
+  .button-text{
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .build-together-text{
+
+  }
+
+  .build-together-text-container{
+    width:90%;
+  }
+
+  .about-me-text-container, .my-places-text-container{
+    width: 70vw;
+  }
+  .about-me-image-container, .my-places-image-container{
+    width: 30vw;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-me-text, .my-places-text{
+    font-size: 20px;
+  }
+  .contact-form-container{
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  .contact-input-div-left, .contact-input-div-center, .contact-input-div-right{
+    width: 100%;
+    text-align: center !important;
+  }
+
+  .contact-input{
+    width: 100%;
+  }
+
+  .closebtn{
+    top: 5px;
+    right: 5px;
+  }
+
+  #work-together-title{
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .my-title, .my-name-small-screen{
+    font-size: 12px;
+  }
+  .my-name{
+    display: none;
+  }
+  .about-me-text-container, .my-places-text-container{
+    padding: 20px !important;
+  }
+
+  .my-name-small-screen{
+    display: inline-block;
+    clear:both;
+  }
+  .massive-text{
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 503px) {
+  .about-me-text-container, .my-places-text-container, .aboutme, .my-places{
+    height: calc(100vh - 40px) !important;
+  }
+  .aboutme{
+    margin-top:40px !important;
+  }
+  .menu-dropdown-tab{
+    display: inline-block;
+  }
+  header .align-right-container{
+    display: none !important;
+  }
+
+  footer .align-right-container{
+    height: 40px;
+  }
+
+  #navbar, .homepage-navbar{
+    height: 40px !important;
+    min-height: 40px !important;
+  }
+
+  .home-notice{
+    top:40px !important; //homenavbar is absolute
+  }
+
+  footer{
+    height: 40px !important;
+  }
+  .square-tab{
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .fa-envelope-o, .fa-github{
+    font-size: 22px !important;
+    line-height: 40px !important;
+  }
+
+  .get-quote{
+    height: calc(100% - 40px) !important;
+  }
+  .portfolio{
+    padding: 20px;
+    padding-top: 60px;
+  }
+  .budget-slider .ui-slider-handle {
+    width: 22px !important;
+    height: 22px !important;
+  }
+
+  .budget-slider.ui-slider .ui-slider-handle {
+    top: 50%;
+    margin-top: -11px;
+  }
+
+  .budget-slider.ui-slider {
+    height: 6px;
+  }
+
+  .budget-slider.ui-slider .ui-slider-range {
+    height: 6px;
+  }
+}
+
+@media (max-width: 503px) {
+  .about-me-text, .my-places-text{
+    font-size: 18px;
+  }
+};

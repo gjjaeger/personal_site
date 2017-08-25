@@ -13,6 +13,8 @@ source 'https://rubygems.org'
   gem 'devise'
   gem 'mail_form'
   gem 'jquery-ui-rails', '~> 5.0.5'
+  gem 'touchpunch-rails'
+
 
 
   group :development, :test do

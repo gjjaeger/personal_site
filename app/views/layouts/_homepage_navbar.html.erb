@@ -1,4 +1,22 @@
 <header class="homepage-navbar">
+  <ul class="nav navbar-nav menu-dropdown-tab">
+    <li class="menu" id="menu-dropdown">
+      <a href="javascript:void(0)" class="menu-dropdown-button small-text white"><i class="fa fa-bars" aria-hidden="true"></i></a>
+      <ul class="small-screen-menu">
+        <a href="javascript:void(0)" class="closebtn">&times;</a>
+        <%= link_to home_path, class:"small-screen-menu-item" do%>
+          <div class=""><span class="nav-item-content">Home</span></div>
+        <%end%>
+        <%= link_to about_path, class:"small-screen-menu-item" do%>
+          <div class=""><span class="nav-item-content">About me</span></div>
+        <%end%>
+        <%= link_to portfolio_path, class:"small-screen-menu-item" do%>
+          <div class=""><span class="nav-item-content">Portfolio</span></div>
+        <%end%>
+        <div class="nav-item contact-nav-item"><span class="nav-item-content" id="contact-nav-item">Contact</span></div>
+      </ul>
+    </li>
+  </ul>
   <span class="align-right-container">
     <%= link_to home_path do%>
       <div class="nav-item"><span class="nav-item-content white">Home</span></div>
@@ -9,6 +27,6 @@
     <%= link_to portfolio_path do%>
       <div class="nav-item"><span class="nav-item-content white">Portfolio</span></div>
     <%end%>
-    <div class="nav-item"><span class="nav-item-content white" id="contact-nav-item">Contact</span></div>
+    <div class="nav-item contact-nav-item"><span class="nav-item-content white" id="contact-nav-item">Contact</span></div>
   </span>
 </header>

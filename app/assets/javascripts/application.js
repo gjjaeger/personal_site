@@ -17,6 +17,7 @@
 //= require bootstrap
 //= require bootstrap/modal
 //= require_tree .
+//= require jquery.ui.touch-punch
 
 
 $(document).on('turbolinks:load', function(){
@@ -31,7 +32,7 @@ $(document).on('turbolinks:load', function(){
       $("#budget-number").html("US$ " + ui.value*1000);
     }
   });
-  $('#contact-nav-item').on('click',function(){
+  $('.contact-nav-item').on('click',function(){
     showContactForm()
   });
   $('#get-in-touch').on('click',function(){
@@ -54,4 +55,18 @@ $(document).on('turbolinks:load', function(){
       top: "0"
     }, 1000);
   };
+  $('.closebtn').on('click',function(){
+    $(".small-screen-menu").width(0);
+    $(".page-content").css('margin-left','0px');
+  });
+
+  $('.menu-dropdown-button').on('click', function(){
+    $(".small-screen-menu").width(150);
+    $(".page-content").css('margin-left','150px');
+  });
+  $(window).resize(function(){
+    $(".small-screen-menu").width(0);
+    $(".page-content").css('margin-left','0px');
+  });
+  // still need to write function to reassign contact button on resize
 });
