@@ -791,10 +791,15 @@ footer{
   border: 0px !important ;
 }
 
+html, body {
+  height: 100%;
+}
+
 body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  touch-action: none;
 }
 
 body{
