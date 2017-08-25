@@ -519,7 +519,6 @@ footer{
   position: relative;
   width:60vw;
   height: calc(100vh - 60px);
-  overflow: scroll;
   display: inline-block;
 }
 
@@ -536,7 +535,6 @@ footer{
   width:60vw;
   display: inline-block;
   height: calc(100vh - 60px);
-  overflow: scroll;
 }
 
 .tab{
@@ -576,7 +574,6 @@ footer{
 
 .aboutme{
   height:calc(100vh - 60px);
-  overflow: scroll;
   margin-top: 60px;
 }
 
@@ -584,7 +581,6 @@ footer{
   position: relative;
   clear: both;
   height:calc(100vh - 60px) !important;
-  overflow: scroll;
   top:0px;
 }
 
@@ -722,7 +718,6 @@ footer{
 .carousel-inner{
   width:100vw !important;
   height: calc(100vh - 60px);
-  overflow: scroll;
   margin: 0;
 }
 
@@ -885,6 +880,9 @@ strong{
   .contact-form-container{
     width: 70%;
   }
+  .my-title{
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1009,6 +1007,14 @@ strong{
 };
 
 @media (max-width: 400px) {
+  .about-me-image-container, .my-places-image-container{
+    width: 100%;
+    height: 200px;
+  }
+  .about-me-text-container, .my-places-text-container{
+    width: 100%;
+    height: 400px !important;
+  }
   .about-me-text, .my-places-text{
     font-size: 14px !important;
   }
@@ -1030,12 +1036,6 @@ strong{
 };
 
 @media (max-width: 320px) {
-  .about-me-image-container, .my-places-image-container{
-    width: 20vw;
-  }
-  .about-me-text-container, .my-places-text-container{
-    width:80vw;
-  }
   .my-title, .my-name-small-screen{
     font-size: 10px;
   }
@@ -1045,10 +1045,8 @@ strong{
 };
 
 @media (max-width: 290px) {
-  .about-me-image-container, .my-places-image-container{
-    width: 15vw;
-  }
   .about-me-text-container, .my-places-text-container{
-    width:85vw;
+    width: 100%;
+    height: 500px !important;
   }
 };
