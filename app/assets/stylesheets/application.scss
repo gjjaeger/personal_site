@@ -233,6 +233,7 @@ header{
   border: none !important;
   cursor: pointer;
   outline: none;
+  margin-left: -13px !important;
 }
 
 .budget-slider.ui-slider-horizontal .ui-slider-handle {
@@ -580,7 +581,7 @@ footer{
   position: relative;
   clear: both;
   height:calc(100vh - 60px) !important;
-  top:60px;
+  top:0px;
 }
 
 .portfolio{
@@ -657,7 +658,7 @@ footer{
 }
 
 .page-title {
-  font-size: 3em;
+  font-size: 44px;
   color: $orange;
   font-weight: 100;
 }
@@ -996,8 +997,54 @@ strong{
   }
 }
 
-@media (max-width: 503px) {
+@media (max-width: 460px) {
   .about-me-text, .my-places-text{
     font-size: 18px;
+  }
+};
+
+@media (max-width: 380px) {
+  .about-me-text, .my-places-text{
+    font-size: 16px;
+  }
+  .page-title{
+    font-size: 36px;
+  }
+  .hunter-prounounciation{
+    font-size: 18px;
+  }
+  .my-title, .my-name-small-screen{
+    font-size: 11px;
+    padding-right: 20px;
+  }
+
+  .massive-text{
+    font-size: 90px;
+    padding-right: 20px;
+  }
+};
+
+@media (max-width: 320px) {
+  .about-me-image-container, .my-places-image-container{
+    width: 20vw;
+  }
+  .about-me-text-container, .my-places-text-container{
+    width:80vw;
+  }
+  .my-title, .my-name-small-screen{
+    font-size: 10px;
+  }
+
+  .massive-text{
+    font-size: 80px;
+  }
+};
+
+@media (max-width: 290px) {
+  .about-me-image-container, .my-places-image-container{
+    width: 15vw;
+  }
+  .about-me-text-container, .my-places-text-container{
+    width:85vw;
   }
 };
