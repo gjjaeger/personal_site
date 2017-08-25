@@ -7,9 +7,7 @@ $orange: #f6a11f;
 $light-grey: #eae6e2;
 $grey: grey;
 
-.page-content{
-  margin-left: 0;
-}
+
 
 .eatCodeSleep, .get-quote{
   height: 100%;
@@ -20,6 +18,17 @@ $grey: grey;
 
 body, html{
   width: 100% !important;
+
+}
+
+body{
+  overflow-y: hidden !important;
+}
+
+.page-content{
+  margin-left: 0;
+  height: 100%;
+  overflow-y: scroll !important;
 }
 
 .get-quote{
