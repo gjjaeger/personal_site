@@ -54,7 +54,7 @@ $(document).on('turbolinks:load', function(){
     $('.contact-modal').animate({
       top: "0"
     }, 1000);
-    window.addEventListener('scroll', noscroll);
+    $('body').addEventListener('scroll', noscroll);
   };
   $('.closebtn').on('click',function(){
     $(".small-screen-menu").width(0);
