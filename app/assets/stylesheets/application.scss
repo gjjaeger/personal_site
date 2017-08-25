@@ -10,7 +10,7 @@ $grey: grey;
 
 
 .eatCodeSleep, .get-quote{
-  height: 100%;
+  height: 100vh;
   width: 100%;
   margin: 0;
   background-color: $black-grey;
@@ -21,7 +21,7 @@ $grey: grey;
 }
 
 .get-quote{
-  height: calc(100% - 60px) !important;
+  height: calc(100vh - 60px) !important;
 }
 
 header{
@@ -792,7 +792,10 @@ body{
   height: 100% !important;
 }
 
-html { overflow:auto !important; }
+html {
+  overflow:auto !important;
+  min-height: 100vh;
+}
 
 .yield-container{
   overflow: scroll !important;
@@ -974,7 +977,7 @@ strong{
   }
 
   .get-quote{
-    height: calc(100% - 40px) !important;
+    height: calc(100vh - 40px) !important;
   }
   .portfolio{
     padding: 20px;
