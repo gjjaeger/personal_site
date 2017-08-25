@@ -9,8 +9,7 @@ $grey: grey;
 
 
 
-.eatCodeSleep, .get-quote{
-  height: 100vh;
+.get-quote{
   width: 100%;
   margin: 0;
   background-color: $black-grey;
@@ -29,8 +28,11 @@ header{
 }
 
 .eatCodeSleep{
+  height: calc(100vh - 60px) !important;
+  width: 100%;
+  margin: 0;
+  background-color: $black-grey;
   display: block;
-  padding-top: 0px;
 }
 
 .orange{
@@ -976,7 +978,7 @@ strong{
     line-height: 40px !important;
   }
 
-  .get-quote{
+  .get-quote, .eatCodeSleep{
     height: calc(100vh - 40px) !important;
   }
   .portfolio{
