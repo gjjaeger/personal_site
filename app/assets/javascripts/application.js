@@ -47,6 +47,7 @@ $(document).on('turbolinks:load', function(){
     }, 1000, function(){
       $('.contact-modal').hide();
     });
+
   });
 
   function showContactForm(){
@@ -54,10 +55,7 @@ $(document).on('turbolinks:load', function(){
     $('.contact-modal').animate({
       top: "0"
     }, 1000);
-    $('html, body').css({
-      overflow: 'hidden',
-      height: '100%'
-    });
+  
   };
   $('.closebtn').on('click',function(){
     $(".small-screen-menu").width(0);
