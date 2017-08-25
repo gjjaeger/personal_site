@@ -789,12 +789,14 @@ footer{
 
 
 body{
+  width: 100%;
   min-height: 100vh !important;
   overflow-y: hidden !important;
   height: 100% !important;
 }
 
 html {
+  width: 100%;
   overflow:auto !important;
   min-height: 100vh;
 }
