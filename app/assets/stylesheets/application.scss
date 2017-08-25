@@ -25,6 +25,8 @@ body{
   overflow-y: hidden !important;
 }
 
+html { overflow:auto; }
+
 .page-content{
   margin-left: 0;
   height: 100%;
