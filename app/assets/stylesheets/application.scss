@@ -1003,12 +1003,13 @@ strong{
   }
 };
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .about-me-text, .my-places-text{
     font-size: 16px;
   }
   .page-title{
     font-size: 36px;
+    color: black !important;
   }
   .hunter-prounounciation{
     font-size: 18px;
