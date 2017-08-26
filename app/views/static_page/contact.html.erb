@@ -7,7 +7,7 @@
     <span class="page-title" id="work-together-title">Let's work together</span>
   </div>
   <div class="contact-form-container">
-    <%= form_for @contact do |f| %>
+    <%= form_for Contact.new() do |f| %>
       <div class="input-row">
         <div class="contact-input-div-left">
           <%= f.label :name, class:"contact-input-label" %>

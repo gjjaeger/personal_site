@@ -1,17 +1,13 @@
 <%= render "layouts/homepage_navbar" %>
-
-<% unless notice.nil?%>
-  <p class="home-notice" id="notice"><%= notice %></p>
-<%end%>
 <div class="get-quote">
   <div class="build-together-text-container">
     <span class="build-together-text">Get a website tailored to your needs</span>
     <span class="medium-sized white slogan">Let me worry about the website. You worry about the rest.</span>
-    <a href="javascript:void(0)" class="btn btn-lg simple-button" id="get-quote-button">
+    <%= link_to contact_path, class:"btn btn-lg simple-button", id:"get-quote-button" do%>
       <span class="button-text">
         get a quote now
       </span>
-    </a>
+    <%end%>
   </div>
 </div>
 <%= render "layouts/footer" %>

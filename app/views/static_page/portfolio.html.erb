@@ -1,8 +1,5 @@
 <%= render "layouts/navbar" %>
 <div class="portfolio page-content">
-  <% unless notice.nil?%>
-    <p class="black" id="notice"><%= notice %></p>
-  <%end%>
   <div class="project">
     <div class="project-title-container">
       <span class="project-title page-title">E-Commerce</span>
@@ -43,11 +40,11 @@
       </span>
     </div>
     <div class="button-container">
-      <a href="javascript:void(0)" class="btn btn-lg simple-button" id="get-in-touch">
+      <%= link_to contact_path, class:"btn btn-lg simple-button", id:"get-in-touch" do%>
         <span class="button-text">
           Get in touch
         </span>
-      </a>
+      <%end%>
     </div>
   </div>
 </div>

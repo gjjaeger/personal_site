@@ -13,7 +13,9 @@
         <%= link_to portfolio_path, class:"small-screen-menu-item" do%>
           <div class=""><span class="nav-item-content">Portfolio</span></div>
         <%end%>
-        <div class="nav-item contact-nav-item"><span class="nav-item-content" id="contact-nav-item">Contact</span></div>
+        <%= link_to contact_path, class:"small-screen-menu-item" do%>
+          <div class="nav-item contact-nav-item"><span class="nav-item-content" id="contact-nav-item">Contact</span></div>
+        <%end%>
       </ul>
     </li>
   </ul>
@@ -27,6 +29,8 @@
     <%= link_to portfolio_path do%>
       <div class="nav-item"><span class="nav-item-content">Portfolio</span></div>
     <%end%>
-    <div class="nav-item contact-nav-item"><span class="nav-item-content" id="contact-nav-item">Contact</span></div>
+    <%= link_to contact_path do%>
+      <div class="nav-item contact-nav-item"><span class="nav-item-content" id="contact-nav-item">Contact</span></div>
+    <%end%>
   </span>
 </header>

@@ -32,44 +32,44 @@ $(document).on('turbolinks:load', function(){
       $("#budget-number").html("US$ " + ui.value*1000);
     }
   });
-  $('.contact-nav-item').on('click',function(){
-    showContactForm()
-  });
-  $('#get-in-touch').on('click',function(){
-    showContactForm()
-  });
-  $('#get-quote-button').on('click',function(){
-    showContactForm()
-  });
-  $('.closebtn').on('click',function(){
-    hideContactForm();
-  });
+  // $('.contact-nav-item').on('click',function(){
+  //   showContactForm()
+  // });
+  // $('#get-in-touch').on('click',function(){
+  //   showContactForm()
+  // });
+  // $('#get-quote-button').on('click',function(){
+  //   showContactForm()
+  // });
+  // $('.closebtn').on('click',function(){
+  //   hideContactForm();
+  // });
 
-  function hideContactForm(){
-    $('.contact-modal').animate({
-      top: "-100%",
-      bottom: '100%'
-    }, 1000, function(){
-      $('.contact-modal').hide();
-      $('html, body').css({
-        overflow: 'auto',
-        height: 'auto'
-      });
-    });
-  };
+  // function hideContactForm(){
+  //   $('.contact-modal').animate({
+  //     top: "-100%",
+  //     bottom: '100%'
+  //   }, 1000, function(){
+  //     $('.contact-modal').hide();
+  //     $('html, body').css({
+  //       overflow: 'auto',
+  //       height: 'auto'
+  //     });
+  //   });
+  // };
 
-  function showContactForm(){
-    $('.contact-modal').show();
-    $('.contact-modal').animate({
-      top: "0",
-      bottom: "0"
-    }, 1000, function(){
-      $('html, body').css({
-        overflow: 'hidden',
-        height: '100%'
-      });
-    });
-  };
+  // function showContactForm(){
+  //   $('.contact-modal').show();
+  //   $('.contact-modal').animate({
+  //     top: "0",
+  //     bottom: "0"
+  //   }, 1000, function(){
+  //     $('html, body').css({
+  //       overflow: 'hidden',
+  //       height: '100%'
+  //     });
+  //   });
+  // };
   $('.close-btn').on('click',function(){
     $(".small-screen-menu").width(0);
     $(".page-content").css('margin-left','0px');
