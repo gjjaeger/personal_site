@@ -47,7 +47,10 @@ $(document).on('turbolinks:load', function(){
     }, 1000, function(){
       $('.contact-modal').hide();
     });
-
+    $('html, body').css({
+      overflow: 'auto',
+      height: 'auto'
+    });
   });
 
   function showContactForm(){
@@ -55,9 +58,9 @@ $(document).on('turbolinks:load', function(){
     $('.contact-modal').animate({
       top: "0"
     }, 1000);
-  
+    
   };
-  $('.closebtn').on('click',function(){
+  $('.close-btn').on('click',function(){
     $(".small-screen-menu").width(0);
     $(".page-content").css('margin-left','0px');
   });
