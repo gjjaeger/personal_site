@@ -51,10 +51,10 @@ $(document).on('turbolinks:load', function(){
       bottom: '100%'
     }, 1000, function(){
       $('.contact-modal').hide();
-    });
-    $('html, body').css({
-      overflow: 'auto',
-      height: 'auto'
+      $('html, body').css({
+        overflow: 'auto',
+        height: 'auto'
+      });
     });
   };
 
@@ -63,10 +63,11 @@ $(document).on('turbolinks:load', function(){
     $('.contact-modal').animate({
       top: "0",
       bottom: "0"
-    }, 1000);
-    $('html, body').css({
-      overflow: 'hidden',
-      height: '100%'
+    }, 1000, function(){
+      $('html, body').css({
+        overflow: 'hidden',
+        height: '100%'
+      });
     });
   };
   $('.close-btn').on('click',function(){
