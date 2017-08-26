@@ -47,7 +47,10 @@ $(document).on('turbolinks:load', function(){
     }, 1000, function(){
       $('.contact-modal').hide();
     });
-    
+    $('html, body').css({
+      overflow: 'auto',
+      height: 'auto'
+    });
   });
 
   function showContactForm(){
