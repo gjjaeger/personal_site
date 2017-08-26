@@ -42,18 +42,28 @@ $(document).on('turbolinks:load', function(){
     showContactForm()
   });
   $('.closebtn').on('click',function(){
-    
-    $('.contact-modal').hide();
+    hideContactForm();
+  });
 
+  function hideContactForm(){
+    $('.contact-modal').animate({
+      top: "-100%",
+      bottom: '100%'
+    }, 1000, function(){
+      $('.contact-modal').hide();
+    });
     $('html, body').css({
       overflow: 'auto',
       height: 'auto'
     });
-  });
+  };
 
   function showContactForm(){
     $('.contact-modal').show();
-
+    $('.contact-modal').animate({
+      top: "0",
+      bottom: "0"
+    }, 1000);
     $('html, body').css({
       overflow: 'hidden',
       height: '100%'
