@@ -72,16 +72,19 @@ $(document).on('turbolinks:load', function(){
   // };
   $('.close-btn').on('click',function(){
     $(".small-screen-menu").width(0);
-    $(".page-content").css('margin-left','0px');
+    // $(".page-content").css('margin-left','0px');
+    $(".page-content").css('opacity','1');
   });
 
   $('.menu-dropdown-button').on('click', function(){
     $(".small-screen-menu").width(150);
-    $(".page-content").css('margin-left','150px');
+    // $(".page-content").css('margin-left','150px');
+    $(".page-content").css('opacity','0.3');
   });
   $(window).resize(function(){
     $(".small-screen-menu").width(0);
-    $(".page-content").css('margin-left','0px');
+    // $(".page-content").css('margin-left','0px');
+    $(".page-content").css('opacity','1');
   });
   // still need to write function to reassign contact button on resize
 });

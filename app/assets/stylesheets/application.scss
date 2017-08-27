@@ -103,7 +103,7 @@ header{
 
 .build-together-text{
   color:white !important;
-  font-size: 3em;
+  font-size: 36px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 400;
@@ -126,7 +126,7 @@ header{
 }
 
 .simple-button:hover{
-  border: 2px solid white !important;
+  border: 1px solid white !important;
 }
 
 #go-to-site:hover, #contact-submit:hover{
@@ -283,11 +283,10 @@ textarea:focus, input:focus, .simple-button:focus{
   font-size: 24px;
   color:white;
   width: 50%;
-  position: absolute;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
-  margin-left: auto;
-  margin-right: auto;
+
   border: 1px solid $orange;
   text-align: center;
   padding: 10px;
@@ -811,33 +810,58 @@ strong{
   font-weight: 400 !important;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1024px) {
   .build-together-text-container{
-    width:60%;
+    width:70%;
+  }
+  .about-me-text, .my-places-text{
+    font-size: 19px;
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 960px) {
   .build-together-text{
     font-size: 30px;
   }
   .contact-form-container{
     width: 70%;
   }
-}
-
-@media (max-width: 890px) {
   .about-me-text-container, .my-places-text-container{
     padding: 40px;
   }
-}
 
-@media (max-width: 850px) {
-  .project-image-container, .project-details-container{
-    width: 100% !important;
+  .key-features-title{
+    font-weight: 300;
   }
+
+  .key-features-title-container{
+    text-align: center;
+  }
+
+
+  .project-details-container{
+    padding-left: 30px;
+  }
+
   .contact-form-container{
     width: 80%;
+  }
+
+
+
+  .go-to-site-button-container{
+    text-align: center;
+  }
+
+
+  .my-title, .my-name-small-screen{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-image-container, .project-details-container{
+    width: 100% !important;
   }
 
   .project-details-container{
@@ -849,18 +873,11 @@ strong{
     width: 100%;
   }
 
-  .go-to-site-button-container{
-    text-align: center;
+  #notice{
+    font-size: 20px;
+    width: 75%;
   }
-}
 
-@media (max-width: 800px) {
-  .my-title, .my-name-small-screen{
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 750px) {
   .nav-item{
     width: 125px;
   }
@@ -892,9 +909,9 @@ strong{
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 640px) {
   .about-me-text, .my-places-text{
-    font-size: 20px;
+    font-size: 18px;
   }
   .contact-form-container{
     width: 70%;
@@ -902,9 +919,8 @@ strong{
   .my-title{
     font-size: 15px;
   }
-}
 
-@media (max-width: 575px) {
+
   .contact-input-div-left, .contact-input-div-center, .contact-input-div-right{
     width: 100%;
     text-align: center !important;
@@ -912,11 +928,6 @@ strong{
 
   .contact-input{
     width: 100%;
-  }
-
-  .closebtn{
-    top: 5px;
-    right: 5px;
   }
 
   #work-together-title{
@@ -940,9 +951,8 @@ strong{
   .massive-text{
     font-size: 100px;
   }
-}
 
-@media (max-width: 503px) {
+
   .about-me-text-container, .my-places-text-container, .aboutme, .my-places{
     height: calc(100vh - 40px) !important;
   }
@@ -1001,8 +1011,9 @@ strong{
   }
 
   .budget-slider .ui-slider-handle {
-    width: 7.5px !important;
+    width: 8px !important;
     height: 35px !important;
+    margin-left: -4px !important;
   }
 
   .budget-slider.ui-slider .ui-slider-handle {
@@ -1019,13 +1030,10 @@ strong{
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 480px) {
   .about-me-text, .my-places-text{
     font-size: 18px;
   }
-};
-
-@media (max-width: 400px) {
   .about-me-image-container, .my-places-image-container{
     width: 100%;
     height: 200px;
@@ -1055,7 +1063,13 @@ strong{
     font-size: 90px;
     padding-right: 20px;
   }
+
+  #notice{
+    font-size: 18px;
+    width: 90%;
+  }
 };
+
 
 @media (max-width: 320px) {
   .my-title, .my-name-small-screen{
@@ -1064,9 +1078,7 @@ strong{
   .massive-text{
     font-size: 80px;
   }
-};
 
-@media (max-width: 290px) {
   .about-me-text-container, .my-places-text-container{
     width: 100%;
     height: 500px !important;
